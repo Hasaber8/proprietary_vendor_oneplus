@@ -136,10 +136,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "NQNfcNci",
+	name: "QtiTelephonyService",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/app/NQNfcNci/NQNfcNci.apk",
-	overrides: ["NfcNci"],
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -148,13 +147,14 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
+	name: "IFAAService",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
